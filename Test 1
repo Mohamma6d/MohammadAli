@@ -1,0 +1,11 @@
+inp = input("Enter a hours: ")
+anp = input("Enter a rate: ")
+hours = float(inp)
+rate = float(anp)
+if hours > 40:
+    ov = hours - 40
+    pay = (rate * ov * 1.5) + (40 * rate)
+    print("Pay: ", pay)
+else :
+    pay = hours * rate
+    print("Pay: ", pay)
